@@ -1,0 +1,58 @@
+﻿<controls:MetroWindow x:Class="Weather.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
+        AllowsTransparency="True" Opacity="1"
+        Title="天气预报" Height="260" MinHeight="260" MaxHeight="260" 
+        Width="450" MinWidth="450" MaxWidth="450" Background="#2a3747" 
+        WindowStartupLocation="CenterScreen" Icon="Resources/Image/icon.ico" ShowIconOnTitleBar="False" >
+    <controls:MetroWindow.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Resources/style/MainWindowStyle.xaml">
+                </ResourceDictionary>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </controls:MetroWindow.Resources>
+    <Grid Background="#2a3747" MouseLeftButtonDown="UIElement_OnMouseLeftButtonDown" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+        </Grid.RowDefinitions>
+        <Label x:Name="GregorianCalendar" Content="2015/6/19" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Foreground="White" Grid.Row="0"/>
+        <Label x:Name="LunarCalendar"  Grid.Row="0" Content="五月初四" HorizontalAlignment="Left" Margin="85,10,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label x:Name="Week" Grid.Row="0" Content="星期五" HorizontalAlignment="Left" Margin="143,10,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label x:Name="Temperatures" Grid.Row="0" Content="24℃"  FontSize="20"  HorizontalAlignment="Left" Margin="380,10,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label x:Name="TimeNow" Grid.Row="0" Content="10:35" FontSize="50" HorizontalAlignment="Left" Margin="10,40,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label x:Name="Weather" Content="阴" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Foreground="White" Grid.Row="1"/>
+        <Label x:Name="MaxMinTemperatureJt" Content="20/29℃" HorizontalAlignment="Left" Margin="37,10,0,0" VerticalAlignment="Top" Foreground="White" Grid.Row="1"/>
+        <Label x:Name="Wind" Content="东风2级" HorizontalAlignment="Left" Margin="10,27,0,0" VerticalAlignment="Top" Foreground="White" Grid.Row="1"/>
+        <Border x:Name="Border" BorderBrush="White" Background="#242E3B" BorderThickness="0"  HorizontalAlignment="Left" Height="39" CornerRadius="18" Margin="10,66,0,0" Grid.Row="1" VerticalAlignment="Top" Width="160"   >
+            <Grid>
+                <Canvas Height="25" Width="20" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,4,0,5">
+                    <Path Height="25" Width="20" Style="{DynamicResource GPSIconstyle}"  Stretch="Fill"  Fill="White"  ></Path>
+                </Canvas>
+                <Label x:Name="CurrentCity" Grid.Row="0" Content="苏州"  FontSize="18"  HorizontalAlignment="Left"  VerticalAlignment="Center" Foreground="White" Margin="40,4,0,3"/>
+                <Canvas Height="25" Width="20" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,5,0">
+                    <Path Height="25" Width="20" Style="{DynamicResource ChangeIconstyle}"  Stretch="Fill"  Fill="White"  ></Path>
+                </Canvas>
+            </Grid>
+        </Border>
+        <Image ToolTip="多云" x:Name="TodayWeatherImg" Grid.Row="0" HorizontalAlignment="Left" Height="95" Width="95" Margin="280,15,0,0" VerticalAlignment="Top"  Source="Resources/Image/w2.png" />
+        <Image ToolTip="晴转多云" x:Name="TomorrowWeatherImg" Grid.Row="1" HorizontalAlignment="Left" Height="40" Width="40" Margin="233,9,0,0" VerticalAlignment="Top"  Source="Resources/Image/ww1.png" />
+        <Image ToolTip="阵雨" x:Name="AcquiredWeatherImg" Grid.Row="1" HorizontalAlignment="Left" Height="40" Width="40" Margin="303,9,0,0" VerticalAlignment="Top"  Source="Resources/Image/ww3.png" />
+        <Image ToolTip="中雨" x:Name="DaHoutianWeatherImg" Grid.Row="1" HorizontalAlignment="Left" Height="40" Width="40" Margin="373,9,0,0" VerticalAlignment="Top"  Source="Resources/Image/ww8.png" />
+        <Label x:Name="MaxMinTemperatureMt" Content="20/29℃" HorizontalAlignment="Left" Margin="225,48,0,0" VerticalAlignment="Top" Foreground="White" Grid.Row="1"/>
+        <Label x:Name="MaxMinTemperatureHt" Content="20/29℃" HorizontalAlignment="Left" Margin="295,48,0,0" VerticalAlignment="Top" Foreground="White" Grid.Row="1"/>
+        <Label x:Name="MaxMinTemperatureDHt" Content="20/29℃" HorizontalAlignment="Left" Margin="365,48,0,0" VerticalAlignment="Top" Foreground="White" Grid.Row="1"/>
+        <Label x:Name="Mt" Grid.Row="1" Content="周六" HorizontalAlignment="Left" Margin="235,65,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label x:Name="Ht" Grid.Row="1" Content="周日" HorizontalAlignment="Left" Margin="305,65,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label x:Name="DHt" Grid.Row="1" Content="周一" HorizontalAlignment="Left" Margin="375,65,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label x:Name="EventTime" Grid.Row="1" Content="2015-06-19 09:19" HorizontalAlignment="Left" Margin="291,88,0,0" VerticalAlignment="Top" Foreground="White"/>
+
+        <Canvas Grid.Row="1" Width="25" Height="25" Margin="0,80,10,0" HorizontalAlignment="Right" >
+            <Image Source="Resources/Image/org3_widget_refresh.png" Width="25" Height="25"  ></Image>
+        </Canvas>
+
+    </Grid>
+</controls:MetroWindow>

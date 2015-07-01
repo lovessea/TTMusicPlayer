@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetSpeedTest", "NetSpeedTest\NetSpeedTest.csproj", "{00D6EC74-D251-448D-8099-8B5CB1647B16}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example", "Example\Example.csproj", "{A9049CA1-043E-49EC-8D50-66D000581735}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather", "Weather\Weather.csproj", "{0569A7BC-1E2B-4F7C-8851-6F2D7504C2C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TTMusicPlayer", "MikiMusicPlayer\TTMusicPlayer.csproj", "{A5E84BC1-CF68-4AB6-9A57-A41C41A11709}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{00D6EC74-D251-448D-8099-8B5CB1647B16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00D6EC74-D251-448D-8099-8B5CB1647B16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00D6EC74-D251-448D-8099-8B5CB1647B16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00D6EC74-D251-448D-8099-8B5CB1647B16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9049CA1-043E-49EC-8D50-66D000581735}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9049CA1-043E-49EC-8D50-66D000581735}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9049CA1-043E-49EC-8D50-66D000581735}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9049CA1-043E-49EC-8D50-66D000581735}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0569A7BC-1E2B-4F7C-8851-6F2D7504C2C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0569A7BC-1E2B-4F7C-8851-6F2D7504C2C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0569A7BC-1E2B-4F7C-8851-6F2D7504C2C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0569A7BC-1E2B-4F7C-8851-6F2D7504C2C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5E84BC1-CF68-4AB6-9A57-A41C41A11709}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5E84BC1-CF68-4AB6-9A57-A41C41A11709}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5E84BC1-CF68-4AB6-9A57-A41C41A11709}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5E84BC1-CF68-4AB6-9A57-A41C41A11709}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
