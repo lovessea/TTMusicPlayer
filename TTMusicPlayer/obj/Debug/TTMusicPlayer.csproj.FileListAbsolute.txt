@@ -46,3 +46,4 @@ C:\Users\lovessea\Documents\Visual Studio 2013\Projects\PowerProjects\TTMusicPla
 C:\Users\lovessea\Documents\Visual Studio 2013\Projects\PowerProjects\TTMusicPlayer\TTMusicPlayer\obj\Debug\TTMusicPlayer.g.resources
 C:\Users\lovessea\Documents\Visual Studio 2013\Projects\PowerProjects\TTMusicPlayer\TTMusicPlayer\obj\Debug\TTMusicPlayer.Properties.Resources.resources
 C:\Users\lovessea\Documents\Visual Studio 2013\Projects\PowerProjects\TTMusicPlayer\TTMusicPlayer\obj\Debug\TTMusicPlayer.csproj.GenerateResource.Cache
+C:\Users\lovessea\Documents\Visual Studio 2013\Projects\PowerProjects\TTMusicPlayer\TTMusicPlayer\bin\Debug\GifImageLib.dll

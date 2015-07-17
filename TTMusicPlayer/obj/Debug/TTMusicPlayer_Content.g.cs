@@ -8,6 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/lib/gifimagelib.dll")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/lib/newtonsoft.json.dll")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/lib/system.windows.interactivity.dll")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/lib/cscore.dll")]

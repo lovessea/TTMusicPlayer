@@ -41,6 +41,10 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>Resources\lib\CSCore.dll</HintPath>
     </Reference>
+    <Reference Include="GifImageLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Resources\lib\GifImageLib.dll</HintPath>
+    </Reference>
     <Reference Include="MahApps.Metro, Version=0.9.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>Resources\lib\MahApps.Metro.dll</HintPath>
@@ -146,6 +150,8 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Resources\Images\RfCqLoe9.gif" />
+    <Content Include="Resources\lib\GifImageLib.dll" />
     <Content Include="Resources\lib\Newtonsoft.Json.dll" />
     <Content Include="Resources\lib\System.Windows.Interactivity.dll" />
     <Resource Include="Resources\Images\logo.ico" />

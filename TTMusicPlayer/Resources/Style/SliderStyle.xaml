@@ -421,8 +421,9 @@
         </Setter>
     </Style>
     <Style x:Key="SliderStyle" TargetType="{x:Type Slider}">
-        <Setter Property="Stylus.IsPressAndHoldEnabled" Value="false" />
+        <Setter Property="Stylus.IsPressAndHoldEnabled" Value="true" />
         <Setter Property="Background" Value="Transparent" />
+        <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
         <Setter Property="Foreground" Value="#FFC4C4C4" />
         <Setter Property="Template">
             <Setter.Value>
@@ -442,8 +443,8 @@
                                      Placement="Bottom" Grid.Row="2" Visibility="Collapsed" />
                             <Border x:Name="TrackBackground"
                                     BorderBrush="{StaticResource HorizontalSliderTrackNormalBorder}"
-                                    BorderThickness="1"
-                                    Background="{StaticResource HorizontalSliderTrackNormalBackground}"
+                                    BorderThickness="0"
+                                    Background="black"
                                     CornerRadius="0" Height="1" Margin="5,0" Grid.Row="1" VerticalAlignment="center">
                                 <Canvas Margin="-6,-1">
                                     <Rectangle x:Name="PART_SelectionRange"

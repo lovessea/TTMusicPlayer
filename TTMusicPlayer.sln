@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TTMusicPlayer", "TTMusicPlayer\TTMusicPlayer.csproj", "{A5E84BC1-CF68-4AB6-9A57-A41C41A11709}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApplication1", "WpfApplication1\WpfApplication1.csproj", "{ADE670E6-2520-4949-AFA1-2A1ED13BF3EA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{A5E84BC1-CF68-4AB6-9A57-A41C41A11709}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A5E84BC1-CF68-4AB6-9A57-A41C41A11709}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A5E84BC1-CF68-4AB6-9A57-A41C41A11709}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADE670E6-2520-4949-AFA1-2A1ED13BF3EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADE670E6-2520-4949-AFA1-2A1ED13BF3EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADE670E6-2520-4949-AFA1-2A1ED13BF3EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADE670E6-2520-4949-AFA1-2A1ED13BF3EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

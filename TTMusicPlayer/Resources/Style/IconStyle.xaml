@@ -14,13 +14,13 @@
     </Canvas>
 
     <!--播放-->
-    <Canvas x:Key="PlayIcon" Width="25" Height="25" Clip="F1 M 0,0L 100,0L 100,100L 0,100L 0,0">
-        <Path Width="25" Height="25" Stretch="Fill" Fill="#FFFFFF" Data="M1,1 L22.316001,27.242001 1,53.483999 z" />
+    <Canvas x:Key="PlayIcon" Width="25" Height="30" >
+        <Path Stretch="Fill" Fill="#FFFFFF" Data="M1,1 L23.231412,18.000001 1,34.999999 z" />
     </Canvas>
 
     <!--暂停-->
-    <Canvas x:Key="PauseIcon" Width="25" Height="25" Clip="F1 M 0,0L 100,0L 100,100L 0,100L 0,0">
-        <Path Width="16" Height="16" Stretch="Fill" Fill="#FFFFFF"
+    <Canvas x:Key="PauseIcon"  Clip="F1 M 0,0L 100,0L 100,100L 0,100L 0,0">
+        <Path Width="35" Height="35" Stretch="Fill" Fill="#FFFFFF"
               Data="F1 M 26.9167,23.75L 33.25,23.75L 33.25,52.25L 26.9167,52.25L 26.9167,23.75 Z M 42.75,23.75L 49.0833,23.75L 49.0833,52.25L 42.75,52.25L 42.75,23.75 Z" />
     </Canvas>
 

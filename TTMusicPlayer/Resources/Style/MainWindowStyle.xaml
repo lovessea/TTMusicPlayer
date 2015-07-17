@@ -8,6 +8,7 @@
     <!--无边框Button-->
     <Style x:Key="ButtonStyle" TargetType="{x:Type Button}">
         <Setter Property="Height" Value="25" />
+        <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
         <Setter Property="Width" Value="25" />
         <Setter Property="Background" Value="#1d262f" />
         <Setter Property="Foreground" Value="#C3DCEC" />
@@ -25,10 +26,31 @@
         </Setter>
     </Style>
 
+    <Style x:Key="PlayStyle" TargetType="{x:Type Button}">
+        <Setter Property="Height" Value="35" />
+        <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+        <Setter Property="Width" Value="35" />
+        <Setter Property="Background" Value="#1d262f" />
+        <Setter Property="Foreground" Value="#C3DCEC" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid>
+                        <ContentPresenter x:Name="Icon" Content="{TemplateBinding Content}" 
+                                          HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+                                          ContentTemplate="{DynamicResource
+                            PlayIconTemplate}" />
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
     <!--无边框Button-->
     <Style x:Key="AddFileButtonStyle" TargetType="{x:Type Button}">
         <Setter Property="Height" Value="25" />
         <Setter Property="Width" Value="25" />
+        <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
         <Setter Property="Background" Value="#1d262f" />
         <Setter Property="Foreground" Value="#FFFFFF" />
         <Setter Property="Template">
@@ -53,6 +75,24 @@
         </Setter>
     </Style>
     
+    
+    <!--播放按钮、暂停按钮-->
+    <DataTemplate x:Key="PlayIconTemplate" DataType="ContentPresenter">
+        <Rectangle Width="19" Height="22" x:Name="Icon" VerticalAlignment="Center" HorizontalAlignment="Center"
+                   Fill="{Binding Path=Foreground, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Button}}}">
+            <Rectangle.OpacityMask>
+                <VisualBrush Stretch="Fill"
+                             Visual="{Binding Path=Content, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Button}}}" />
+            </Rectangle.OpacityMask>
+        </Rectangle>
+        <DataTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter TargetName="Icon" Property="Fill" Value="#E4EFF6" />
+            </Trigger>
+        </DataTemplate.Triggers>
+    </DataTemplate>
+
+    <!--上一首、下一首按钮-->
     <DataTemplate x:Key="IconTemplate" DataType="ContentPresenter">
         <Rectangle Width="14" Height="16" x:Name="Icon"
                    Fill="{Binding Path=Foreground, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Button}}}">
@@ -67,7 +107,7 @@
             </Trigger>
         </DataTemplate.Triggers>
     </DataTemplate>
-    
+
     <DataTemplate x:Key="LittleIconTemplate" DataType="ContentPresenter">
         <Rectangle Width="10" Height="10" x:Name="Icon"
                    Fill="{Binding Path=Foreground, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Button}}}">
@@ -87,7 +127,8 @@
 <!--播放列表ListBoxItem-->
     <Style x:Key="ListBoxItemStyle" TargetType="{x:Type ListBoxItem}">
         <Setter Property="Height" Value="30"/>
-        <Setter Property="Margin" Value="0,0,0,0"></Setter>
+        <Setter Property="Margin" Value="0,0,0,0"/>
+        <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
         <Setter Property="HorizontalContentAlignment" Value="left"/>
         <Setter Property="Template">
             <Setter.Value>
